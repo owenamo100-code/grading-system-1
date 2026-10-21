@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grading System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Grading System</h1>
+    <p>Enter student names and marks to generate results.</p>
+    <form id="studentForm">
+      <input type="text" id="studentName" placeholder="Student name" required>
+      <input type="number" id="studentMark" placeholder="Mark (0-100)" min="0" max="100" step="any" required>
+      <button type="submit">Add Student</button>
+    </form>
+    <p id="message" role="alert"></p>
+    <h2>Student Results</h2>
+    <table>
+      <thead><tr><th>Student Name</th><th>Mark</th><th>Grade</th></tr></thead>
+      <tbody id="results"></tbody>
+    </table>
+    <section class="summary">
+      <p id="studentCount">Number of students: 0</p>
+      <p id="average">Class average: 0.00</p>
+      <p id="highest">Highest score: None</p>
+    </section>
+  </main>
+</body>
+</html>
